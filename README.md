@@ -4,7 +4,7 @@
 Création d'un projet applicatif sur Windows.
 Diverses fonctionnalités seront ajoutés pour satisfaires le cahier des charges.
 
-Application réalisée dans le cadre de l'épreuve E4 du BTS SIO SLAM.
+Application réalisée dans le cadre de l'épreuve E5 du BTS SIO SLAM.
 
 
 
