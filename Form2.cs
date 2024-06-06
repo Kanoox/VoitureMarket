@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI;
 
 namespace Bibliotheque_cars
 {
     public partial class Form2 : Form
     {
         // Chaîne de connexion à la base de données
-        string connectionString = "server=localhost;port=3306;database=bibliotheque_cars;user=florentin;password=Q6XHp!ilboECe!6.;";
+        string connectionString = "server=localhost;port=3306;database=bibliotheque_cars;user=root;password=";
         public Form2()
         {
             InitializeComponent();
@@ -73,11 +74,11 @@ namespace Bibliotheque_cars
                 anneeBox.Clear();
                 transmissionBox.Clear();
                 powerBox.Clear();
+                label9.Text = string.Empty;
 
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-
                     string query = "SELECT model FROM cars WHERE type = @type"; // Requête voulu
                     MySqlCommand command = new MySqlCommand(query, connection); // Création de la command pour simplifier l'éxécution
                     command.Parameters.AddWithValue("@type", listBox_type.SelectedItem);
@@ -163,11 +164,12 @@ namespace Bibliotheque_cars
         {
             if (listBox_vehdispo.SelectedIndex != -1)
             {
+                label9.Text = string.Empty;
 
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "SELECT fuel, date, transmission, power from cars WHERE model = @model";
+                    string query = "SELECT id, fuel, date, transmission, power from cars WHERE model = @model";
                     MySqlCommand command = new MySqlCommand(query, connection);
                     command.Parameters.AddWithValue("@model", listBox_vehdispo.SelectedItem);
 
@@ -201,6 +203,17 @@ namespace Bibliotheque_cars
 
         private void Form2_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void achat_button_Click(object sender, EventArgs e)
+        {
+
+
+            // Crée une instance de la nouvelle fenêtre
+            FormAchat formAchat = new FormAchat();
+            // Ouvre la nouvelle fenêtre
+            formAchat.Show();
 
         }
     }

@@ -45,6 +45,7 @@
             label8 = new Label();
             transmissionBox = new TextBox();
             label9 = new Label();
+            achat_button = new Button();
             SuspendLayout();
             // 
             // listBox_marque
@@ -203,11 +204,23 @@
             label9.Text = "Modèle choisi :";
             label9.Click += label9_Click;
             // 
+            // achat_button
+            // 
+            achat_button.Location = new Point(445, 376);
+            achat_button.Margin = new Padding(3, 2, 3, 2);
+            achat_button.Name = "achat_button";
+            achat_button.Size = new Size(135, 50);
+            achat_button.TabIndex = 17;
+            achat_button.Text = "Achat";
+            achat_button.UseVisualStyleBackColor = true;
+            achat_button.Click += achat_button_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(888, 451);
+            Controls.Add(achat_button);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(transmissionBox);
@@ -251,5 +264,7 @@
         private Label label8;
         private TextBox transmissionBox;
         private Label label9;
+        private Button button1;
+        private Button achat_button;
     }
 }

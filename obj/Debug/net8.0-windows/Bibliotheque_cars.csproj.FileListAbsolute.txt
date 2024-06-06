@@ -19,3 +19,5 @@ C:\Users\tinti\source\repos\Bibliotheque_cars\Bibliotheque_cars\bin\Debug\net8.0
 C:\Users\tinti\source\repos\Bibliotheque_cars\Bibliotheque_cars\bin\Debug\net8.0-windows\MySql.Data.xml
 C:\Users\tinti\source\repos\Bibliotheque_cars\Bibliotheque_cars\obj\Debug\net8.0-windows\Bibliotheque_cars.csproj.CopyComplete
 C:\Users\tinti\source\repos\Bibliotheque_cars\Bibliotheque_cars\obj\Debug\net8.0-windows\Bibliotheque_cars.Form2.resources
+C:\Users\tinti\source\repos\Bibliotheque_cars\Bibliotheque_cars\obj\Debug\net8.0-windows\Bibliotheque_cars.sourcelink.json
+C:\Users\tinti\source\repos\Bibliotheque_cars\Bibliotheque_cars\obj\Debug\net8.0-windows\Bibliotheque_cars.FormAchat.resources

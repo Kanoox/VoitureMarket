@@ -61,6 +61,7 @@
             passwordBox.Size = new Size(422, 23);
             passwordBox.TabIndex = 2;
             passwordBox.TextChanged += textBox2_TextChanged;
+            this.passwordBox.UseSystemPasswordChar = true;
             // 
             // label1
             // 

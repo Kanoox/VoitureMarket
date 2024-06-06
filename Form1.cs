@@ -8,7 +8,7 @@ namespace Bibliotheque_cars
     public partial class Form1 : Form
     {
         // Chaîne de connexion à la base de données
-        string connectionString = "server=localhost;port=3306;database=bibliotheque_cars;user=florentin;password=Q6XHp!ilboECe!6.;";
+        string connectionString = "server=localhost;port=3306;database=bibliotheque_cars;user=root;password=";
 
         public Form1()
         {
